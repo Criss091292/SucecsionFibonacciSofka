@@ -1,6 +1,5 @@
 let n=0;
 let arrayFibonacci=[];
-
 n = leerN();
 arrayFibonacci =calcularPrimerosNElementosFibonacci(n);
 alert(mostrarSerie(arrayFibonacci)); 
@@ -12,14 +11,12 @@ function validarN(n){
         return false;
     }
 }
-
 function leerN(){
     do {
         n = parseInt(prompt("ingrese el nro de elementos a mostrar ",10));
     }while(!validarN(n));
     return n;
-} 
-
+}
 function calcularPrimerosNElementosFibonacci(n){
     alert(n);
     for(let i=0; i<n; i++){
